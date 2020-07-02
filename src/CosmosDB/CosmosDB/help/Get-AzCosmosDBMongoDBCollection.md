@@ -39,6 +39,12 @@ Name    Id   Resource
 
 Resource Object contains MongoIndexes, _rid, _ts, _etag properties.
 
+### Example 2 
+To retrieve ShardKey
+
+PS C:\> (Get-AzCosmosDBMongoDBCollection -ResourceGroupName {rgName} -AccountName {accountName}  -Database {dbName} -Name {collectionName}).Resource.ShardKey 
+
+
 ## PARAMETERS
 
 ### -AccountName
